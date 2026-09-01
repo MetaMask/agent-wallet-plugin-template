@@ -1,0 +1,48 @@
+{
+  "name": "mm-plugin-hello",
+  "version": "0.1.0",
+  "description": "Starter template for a MetaMask Agent Wallet CLI (mm) plugin",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "files": [
+    "dist",
+    "oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && oclif manifest",
+    "prepack": "tsc -p tsconfig.json && oclif manifest"
+  },
+  "oclif": {
+    "bin": "mm",
+    "commands": "./dist/commands",
+    "topicSeparator": " ",
+    "topics": {
+      "hello": {
+        "description": "Example commands from the plugin template"
+      }
+    }
+  },
+  "mm": {
+    "schemaVersion": 1,
+    "minCliVersion": "^6.1.0",
+    "capabilities": [],
+    "commands": [
+      {
+        "id": "hello:ping",
+        "capabilities": [],
+        "dataAccess": []
+      }
+    ]
+  },
+  "peerDependencies": {
+    "@metamask/agent-wallet": "^6"
+  },
+  "devDependencies": {
+    "@metamask/agent-wallet": "^6",
+    "oclif": "^4",
+    "typescript": "^5"
+  }
+}

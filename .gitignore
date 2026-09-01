@@ -1,0 +1,11 @@
+node_modules/
+dist/
+oclif.manifest.json
+*.tgz
+
+# No lockfile committed — use your preferred package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
+bun.lockb
