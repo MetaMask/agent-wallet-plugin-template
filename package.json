@@ -27,7 +27,7 @@
   },
   "mm": {
     "schemaVersion": 1,
-    "minCliVersion": "^6.1.0",
+    "minCliVersion": "^6.2.0",
     "capabilities": [],
     "commands": [
       {
@@ -38,10 +38,10 @@
     ]
   },
   "peerDependencies": {
-    "@metamask/agent-wallet": "^6"
+    "@metamask/agent-wallet": "^6.2.0"
   },
   "devDependencies": {
-    "@metamask/agent-wallet": "^6",
+    "@metamask/agent-wallet": "^6.2.0",
     "oclif": "^4",
     "typescript": "^5"
   }
